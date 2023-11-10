@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wrapper {
+    background-image: url('kop.jpg');
+    min-height: 1400px;
+    width: 100%;
+  }
+  
+  .top {
+    color: rgb(165, 50, 113);
+    text-align: center;
+    margin-right: 150px;
+    background-image: url('kopp.jpg');
+    width: 100%;
+    min-height: 200px;
+    mix-blend-mode: multiply;
+  }
+  
+  .el {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 190px;
+    width: 100%; /
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  
+  .topnav {
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .gitna {
+    text-align: center;
+    width: 100%;
+    min-height: 800px;
+  }
+  
+  .gitna1,
+  .gitna2,
+  .gitna3 {
+    width: 100%;
+    max-width: 33.33%;
+    height: 800px;
+    float: left;
+  }
+  
+  .mug1,
+  .bread2 {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 300px;
+    width: 100%; 
+    max-width: 300px;
+    border-radius: 10%;
+  }
+  
+  .footer {
+    text-shadow: 2px 1px red;
+    text-align: center;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 400px;
+  }
+  
+  .flip-box1,
+  .flip-box,
+  .flip-box3 {
+    background-color: transparent;
+    width: 100%; 
+    max-width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner1,
+  .flip-box-inner,
+  .flip-box-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box1:hover .flip-box-inner1,
+  .flip-box:hover .flip-box-inner,
+  .flip-box3:hover .flip-box-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front1,
+  .flip-box-front,
+  .flip-box-front3,
+  .flip-box-back1,
+  .flip-box-back,
+  .flip-box-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front1,
+  .flip-box-front,
+  .flip-box-front3 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back1,
+  .flip-box-back,
+  .flip-box-back3 {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .box {
+    width: 100%; 
+    max-width: 250px;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .el,
+    .mug1,
+    .bread2,
+    .flip-box1,
+    .flip-box,
+    .flip-box3,
+    .box {
+      width: 100%; 
+      max-width: none;
+    }
+  }
+  
